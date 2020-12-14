@@ -1,2 +1,2 @@
 # ToDo-Application
-Python Naruto quiz
+Tkinter App
