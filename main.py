@@ -33,4 +33,8 @@ def add_task():
 lb_tasks = tkinter.Listbox(root, width=35, font=('Times New Roman', 12, 'bold'))
 lb_tasks.grid(row=2, column=1, rowspan=10)
 
+btn_add_task = tkinter.Button(root, text="Add Task",
+                              fg="coral", bg="brown", width=15, command=add_task,
+                              font=('Times New Roman', 10, 'bold'))
+
 root.mainloop()
