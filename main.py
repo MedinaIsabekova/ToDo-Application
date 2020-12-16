@@ -5,7 +5,7 @@ import tkinter.messagebox
 root = tkinter.Tk()
 
 
-root.geometry("600x360")
+root.geometry("600x350")
 root.configure(bg="coral", padx=20, pady=20)
 root.title("ToDo List")
 
