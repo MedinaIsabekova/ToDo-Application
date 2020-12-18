@@ -47,7 +47,10 @@ txt_input.grid(row=1, column=1)
 btn_add_task = tkinter.Button(root, text="Add Task",
                               fg="coral", bg="brown", width=15, command=add_task,
                               font=('Times New Roman', 10, 'bold'))
-btn_add_task.grid(row=1, column=0, padx=20, pady=(0, 15)) 
+btn_add_task.grid(row=1, column=0, padx=20, pady=(0, 15))
+
+btn_del_all = tkinter.Button(root, text="Delete All", fg="coral", bg="brown", width=15, command=del_all, font=('Times New Roman', 10, 'bold'))
+btn_del_all.grid(row=2, column=0)
 
 lb_tasks = tkinter.Listbox(root, width=35, font=('Times New Roman', 12, 'bold'))
 lb_tasks.grid(row=2, column=1, rowspan=10)
