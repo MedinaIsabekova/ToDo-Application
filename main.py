@@ -29,6 +29,14 @@ def add_task():
         lbl_display["text"] = "Please enter a task!"
         txt_input.delete(0, "end")
         
+        
+def del_all():
+    confirmed = tkinter.messagebox.askyesno("Please Confirm", "Do you really want to delete all of the tasks?")
+    if confirmed == True:
+        global tasks
+        tasks = []
+        update_listbox()
+        
 
 lbl_display = tkinter.Label(root, text="Medina & Nurel ToDo List", bg="brown", fg="coral", font=('Times New Roman', 13, 'bold')) 
 lbl_display.grid(row=0, column=1) 
