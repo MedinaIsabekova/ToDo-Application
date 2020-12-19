@@ -38,6 +38,12 @@ def del_all():
         update_listbox()
         
 
+def show_number_of_tasks():
+    number_of_tasks = len(tasks) 
+
+    msg = "Number of tasks: %s" %number_of_tasks 
+    lbl_display["text"] = msg 
+
 lbl_display = tkinter.Label(root, text="Medina & Nurel ToDo List", bg="brown", fg="coral", font=('Times New Roman', 13, 'bold')) 
 lbl_display.grid(row=0, column=1) 
 
@@ -55,5 +61,7 @@ btn_del_all.grid(row=2, column=0)
 lb_tasks = tkinter.Listbox(root, width=35, font=('Times New Roman', 12, 'bold'))
 lb_tasks.grid(row=2, column=1, rowspan=10)
 
+btn_number_of_tasks = tkinter.Button(root, text="Number of Tasks", fg="coral", bg="brown", width=15, command=show_number_of_tasks, font=('Times New Roman', 10, 'bold')) 
+btn_number_of_tasks.grid(row=3, column=0)
 
 root.mainloop()
