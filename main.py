@@ -37,6 +37,13 @@ def del_all():
         tasks = []
         update_listbox()
         
+        
+ def del_one():
+	task = lb_tasks.get("active")
+	if task in tasks:
+		tasks.remove(task)
+	update_listbox()
+        
 
 def show_number_of_tasks():
     number_of_tasks = len(tasks) 
