@@ -16,6 +16,7 @@ def update_listbox():
     for task in tasks:
         lb_tasks.insert("end", task)
 
+
 def clear_listbox():
     lb_tasks.delete(0, "end")
     
@@ -38,11 +39,11 @@ def del_all():
         update_listbox()
         
         
- def del_one():
-	task = lb_tasks.get("active")
-	if task in tasks:
-		tasks.remove(task)
-	update_listbox()
+def del_one():
+    task = lb_tasks.get("active") 
+    if task in tasks:
+        tasks.remove(task) 
+        update_listbox() 
         
 
 def show_number_of_tasks():
@@ -73,6 +74,6 @@ lb_tasks = tkinter.Listbox(root, width=35, font=('Times New Roman', 12, 'bold'))
 lb_tasks.grid(row=2, column=1, rowspan=10)
 
 btn_number_of_tasks = tkinter.Button(root, text="Number of Tasks", fg="coral", bg="brown", width=15, command=show_number_of_tasks, font=('Times New Roman', 10, 'bold')) 
-btn_number_of_tasks.grid(row=3, column=0)
+btn_number_of_tasks.grid(row=7, column=0)
 
 root.mainloop()
