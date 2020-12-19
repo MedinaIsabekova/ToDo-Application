@@ -58,6 +58,10 @@ btn_add_task.grid(row=1, column=0, padx=20, pady=(0, 15))
 btn_del_all = tkinter.Button(root, text="Delete All", fg="coral", bg="brown", width=15, command=del_all, font=('Times New Roman', 10, 'bold'))
 btn_del_all.grid(row=2, column=0)
 
+
+btn_del_one = tkinter.Button(root, text="Delete Selected", fg="#FF0101", bg="#000000", width=15, command=del_one, font=('Arial', 10, 'bold'))
+btn_del_one.grid(row=3, column=0, pady=(0, 15))
+
 lb_tasks = tkinter.Listbox(root, width=35, font=('Times New Roman', 12, 'bold'))
 lb_tasks.grid(row=2, column=1, rowspan=10)
 
