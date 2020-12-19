@@ -66,7 +66,6 @@ btn_add_task.grid(row=1, column=0, padx=20, pady=(0, 15))
 btn_del_all = tkinter.Button(root, text="Delete All", fg="coral", bg="brown", width=15, command=del_all, font=('Times New Roman', 10, 'bold'))
 btn_del_all.grid(row=2, column=0)
 
-
 btn_del_one = tkinter.Button(root, text="Delete Selected", fg="#FF0101", bg="#000000", width=15, command=del_one, font=('Arial', 10, 'bold'))
 btn_del_one.grid(row=3, column=0, pady=(0, 15))
 
@@ -75,5 +74,8 @@ lb_tasks.grid(row=2, column=1, rowspan=10)
 
 btn_number_of_tasks = tkinter.Button(root, text="Number of Tasks", fg="coral", bg="brown", width=15, command=show_number_of_tasks, font=('Times New Roman', 10, 'bold')) 
 btn_number_of_tasks.grid(row=7, column=0)
+
+btn_exit = tkinter.Button(root, text="Exit", fg="coral", bg="brown", width=15, command=exit, font=('Times New Roman', 10, 'bold'))
+btn_exit.grid(row=8, column=0, pady=(15, 0))
 
 root.mainloop()
