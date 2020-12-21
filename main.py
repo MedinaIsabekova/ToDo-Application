@@ -51,8 +51,9 @@ def del_one():
 def show_number_of_tasks():
     number_of_tasks = len(tasks)
 
-    msg = "Number of tasks: %s" %number_of_tasks
+    msg = "Number of tasks: %s" % number_of_tasks
     lbl_display["text"] = msg
+
 
 lbl_display = tkinter.Label(root,
                             text="Medina & Nurel ToDo List",
