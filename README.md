@@ -3,6 +3,7 @@ Tkinter App
 
 <h3>Made with Tkinter</h3>
 <h4>This is To-Do application made with Tkinter</h4>
+<hr>
 <h4>Contributors</h4>
 <p>Sovetbekov Nurel and Isabek kyzy Medina</p>
 
