@@ -9,7 +9,7 @@ Tkinter App
 
 <hr>
 
-<h3>What this app can do</h3>
+<h3>What this app can do?</h3>
 <br>
 <h4>This is how app looks like</h4>
 <br>
